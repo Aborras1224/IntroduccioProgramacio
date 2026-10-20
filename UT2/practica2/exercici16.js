@@ -1,3 +1,7 @@
-let valor = 25;
-let tipus = valor;
-console.log(typeof valor, typeof tipus,); 
+let x = 25;
+console.log(`valor ${x}, tipo ${typeof x}`);
+x = "number";
+console.log(`valor ${x}, tipo ${typeof x}`);
+x = true;
+console.log(`valor ${x}, tipo ${typeof x}`);
+
