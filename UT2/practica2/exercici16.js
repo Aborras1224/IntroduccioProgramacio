@@ -1,3 +1,3 @@
 let valor = 25;
-let tipus = typeof valor;
-console.log("valor:", valor, "tipus:", tipus);
+let tipus = valor;
+console.log(typeof valor, typeof tipus,); 
