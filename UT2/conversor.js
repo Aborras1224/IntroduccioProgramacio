@@ -1,12 +1,15 @@
-const prompt = require('prompt-sync')();
-let bytes = Number(prompt(`Insereix numero de bytes: `));
-
-let kilobytes = bytes / 1024;
-let megabytes = kilobytes / 1024;
-let gigabytes = megabytes / 1024;
-
-let nom = "Convertim Bytes a -> KB, MB, GB";
+let nom = "========== CONVERSOR D'UNITATS =========="
 console.log(nom);
+
+const prompt = require('prompt-sync')();
+const bytes = Number(prompt(`Insereix numero de bytes: `));
+
+const kilobytes = bytes / 1024;
+const megabytes = kilobytes / 1024;
+const gigabytes = megabytes / 1024;
+
+let nom1 = "Convertim Bytes a -> KB, MB, GB";
+console.log(nom1);
 
 console.log(`Bytes: ${bytes} `);
 console.log(`Kilobytes: ${Math.round(kilobytes * 100) / 100} KB`);
@@ -32,5 +35,4 @@ let velocitatDescarga = Number(number4);
 let tempsDescarga = (midaFitxer * 8000) / velocitatDescarga;
 let tempsMinuts = tempsDescarga / 60;
 
-console.log(`Temps de descàrrega: ${tempsDescarga} segons`);
-console.log(`Temps de descàrrega: ${Math.round(tempsMinuts * 100) / 100} minuts`);
+console.log(`Temps de descàrrega: ${tempsDescarga} segons, ${Math.round(tempsMinuts * 100) / 100} minuts`);
