@@ -23,12 +23,14 @@ console.log(`Mida en bytes: ${gigabytes2 * 1024 * 1024 * 1024} Bytes`);
 let nom3 = "Calculem el Temps de descàrrega";
 console.log(nom3);
 
-let number3 = Number(prompt(`Insereix la Mida del fitxer a descaarregar (GB): `));
-let number4 = Number(prompt(`Quina es la velocitat de descàrrega en Mbps: `));
+let number3 = Number(prompt(`Insereix la mida del fitxer a descarregar (GB): `));
+let number4 = Number(prompt(`Quina és la velocitat de descàrrega en Mbps: `));
 
-let midaFitxer = parseFloat(number3);
-let velocitatDescarga = parseFloat(number4);
+let midaFitxer = Number(number3);
+let velocitatDescarga = Number(number4);
 
-let tempsDescarga = midaFitxer / velocitatDescarga;
+let tempsDescarga = (midaFitxer * 8000) / velocitatDescarga;
+let tempsMinuts = tempsDescarga / 60;
 
 console.log(`Temps de descàrrega: ${tempsDescarga} segons`);
+console.log(`Temps de descàrrega: ${Math.round(tempsMinuts * 100) / 100} minuts`);
