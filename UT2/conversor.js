@@ -32,7 +32,7 @@ let number4 = Number(prompt(`Quina és la velocitat de descàrrega en Mbps: `));
 let midaFitxer = Number(number3);
 let velocitatDescarga = Number(number4);
 
-let tempsDescarga = (midaFitxer * 8000) / velocitatDescarga;
+let tempsDescarga = (midaFitxer * 8591) / velocitatDescarga;
 let tempsMinuts = tempsDescarga / 60;
 
 console.log(`Temps de descàrrega: ${tempsDescarga} segons, ${Math.round(tempsMinuts * 100) / 100} minuts`);
