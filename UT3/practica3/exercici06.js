@@ -1,0 +1,10 @@
+let a = 5 > 3;
+let b = 4 <= 4;
+let c = 7 !== 7;
+let d = 8 >= 10;
+let e = 3 != 5;
+console.log(a);
+console.log(b);
+console.log(c);
+console.log(d);
+console.log(e);

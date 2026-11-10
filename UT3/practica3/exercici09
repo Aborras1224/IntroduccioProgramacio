@@ -1,0 +1,6 @@
+
+let a = 18 > x ? "menor de edad" ;
+let b = 18 < x ? "mayor de edad" ;
+console.log(a);
+console.log(b);
+let x = prompt("Introduce tu edad: ");
