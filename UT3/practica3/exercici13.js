@@ -1,6 +1,6 @@
 const prompt = require('prompt-sync')();
-let talla = prompt("Introduce la talla (1-4): ");
-if (talla === "1") {
+let talla = Number(prompt("Introduce la talla (1-4): "));
+if (talla === 1) {
     console.log("Talla S");
 }
 else if (talla === "2") {

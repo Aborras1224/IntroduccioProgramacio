@@ -4,6 +4,6 @@ let edad = Number(x);
 if (edad < 18) {
     console.log("Eres menor de edad");
 }
-else if (edad >= 18 ) {
+else {
     console.log("Eres mayor de edad");
 }   

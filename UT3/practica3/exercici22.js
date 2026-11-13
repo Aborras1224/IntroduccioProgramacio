@@ -11,12 +11,10 @@ switch (numero) {
     case 5:
         console.log("Dia feiner");
         break;
-
     case 6:
     case 7:
         console.log("Cap de setmana");
         break;
-
     default:
         console.log("Dia no vàlid");
 }
